@@ -12,7 +12,7 @@ const PORT = 5000;
 
 app.use(bodyParser.json());
 app.use(express.json());
-app.use(cors({origin: ["http://localhost:3000","http://localhost:3006"]}));
+app.use(cors({origin: ["https://crm-employee-0607.netlify.app","https://crm-admin-0607.netlify.app"]}));
 app.use(employeeRouter);
 app.use(adminRouter);
 
